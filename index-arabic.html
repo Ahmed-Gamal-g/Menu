@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- icon fontawesome -->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!-- bootstrab -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css" />
+
+    <!-- my css file -->
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <!-- start NavBar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="./index-arabic.html">
+          <img src="./images/logo-Nav-Menu.png" width="150px" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav m-auto">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >الرئيسة</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#who-we-are"
+                >من نحن
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#Contact"
+                >اتصل بنا
+              </a>
+            </li>
+          </ul>
+          <div class="btn-nav-all">
+            <div class="btn-nav">
+              <!-- start model nav-one -->
+              <button
+                type="button"
+                class="btn-model-nav"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                تسجيل الدخول
+              </button>
+              <!-- Button trigger modal -->
+
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                      <h5 class="modal-title" id="exampleModalLabel">
+                        تسجيل الدخول
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="div-text-text form-service">
+                        <form action="">
+                          <input
+                            type="number"
+                            placeholder="رقم الهاتف"
+                            required
+                          />
+                          <input
+                            type="password"
+                            placeholder="كلمه السر"
+                            required
+                          />
+                          <a href="">
+                            <button>اشتراك</button>
+                          </a>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="img-model">
+                        <a class="a-exept" href="https://www.apple.com/eg/">
+                          <img src="./images/img-apple-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.googlplay.com">
+                          <img src="./images/img-google-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.facebook.com">
+                          <img src="./images/img-face-model.png" alt="" />
+                        </a>
+                      </div>
+                      <div class="e4trak"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end model nav-one -->
+
+              <!-- start model nav-two -->
+              <button
+                class="btn-model-nav"
+                data-bs-toggle="modal"
+                href="#exampleModalToggle"
+                role="button"
+                type="submit"
+              >
+                اشتراك
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModalToggle"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel"
+                tabindex="-1"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                      <h5 class="modal-title" id="exampleModalToggleLabel">
+                        اشتراك
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <form action="">
+                        <input
+                          class="input-input"
+                          type="text"
+                          placeholder="الاسم"
+                          required
+                        />
+                        <input
+                          class="input-input"
+                          type="number"
+                          placeholder="رقم الهاتف"
+                          required
+                        />
+                        <input
+                          class="input-input"
+                          type="email"
+                          placeholder="عنوان بريد الكتروني"
+                          required
+                        />
+                        <input
+                          class="input-input"
+                          type="password"
+                          placeholder="كلمه السر"
+                          required
+                        />
+                        <input
+                          class="input-input"
+                          type="password"
+                          placeholder="إعادة إدخال كلمة المرور"
+                          required
+                        />
+                        <button
+                          data-bs-target="#exampleModalToggle2"
+                          data-bs-toggle="modal"
+                        >
+                          استمرار
+                        </button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="img-model">
+                        <a class="a-exept" href="https://www.apple.com/eg/">
+                          <img src="./images/img-apple-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.googlplay.com">
+                          <img src="./images/img-google-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.facebook.com">
+                          <img src="./images/img-face-model.png" alt="" />
+                        </a>
+                      </div>
+                      <div class="e4trak"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- ^&^&&^ -->
+              <div
+                class="modal fade"
+                id="exampleModalToggle2"
+                aria-hidden="true"
+                aria-labelledby="exampleModalToggleLabel2"
+                tabindex="-1"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                      <h5 class="modal-title" id="exampleModalToggleLabel2">
+                        اشتراك
+                      </h5>
+                    </div>
+                    <div class="modal-body">
+                      <div class="text-form-modal-all">
+                        <div class="form-check form-check-inline">
+                          <input
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio1"
+                            value="option1"
+                          />
+                          <label class="form-check-label" for="inlineRadio1"
+                            >طالب خدمة
+                          </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                          <input
+                            checked
+                            class="form-check-input"
+                            type="radio"
+                            name="inlineRadioOptions"
+                            id="inlineRadio2"
+                            value="option2"
+                          />
+                          <label class="form-check-label" for="inlineRadio2"
+                            >مقدم الخدمة
+                          </label>
+                        </div>
+
+                        <div class="div-text form-service">
+                          <form action="">
+                            <input
+                              type="text"
+                              placeholder="Commercial record"
+                            />
+                            <select name="" id="">
+                              <option value="">موقع</option>
+                              <option value="">الرياض</option>
+                              <option value="">جدة</option>
+                              <option value="">مكه</option>
+                              <option value="">الرياض</option>
+                            </select>
+                            <input
+                              type="text"
+                              placeholder="The number of meals expected to be produced per day"
+                            />
+                            <input
+                              type="number"
+                              placeholder="Number of branches"
+                            />
+                            <a href="">
+                              <button>اشتراك</button>
+                            </a>
+                          </form>
+                        </div>
+                        <div class="div-text-two Postulant">
+                          <form action="">
+                            <select name="" id="">
+                              <option value="">نوع المستفيد</option>
+                              <option value="">شركة مقاولات</option>
+                              <option value="">مصنع</option>
+                              <option value="">مناسب</option>
+                            </select>
+                            <select name="" id="">
+                              <option value="">موقع</option>
+                              <option value="">الرياض</option>
+                              <option value="">جدة</option>
+                              <option value="">مكه</option>
+                              <option value="">الرياض</option>
+                            </select>
+                            <a href="">
+                              <button>اشتراك</button>
+                            </a>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="img-model">
+                        <a class="a-exept" href="https://www.apple.com/eg/">
+                          <img src="./images/img-apple-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.googlplay.com">
+                          <img src="./images/img-google-model.png" alt="" />
+                        </a>
+                        <a class="a-exept" href="http://www.facebook.com">
+                          <img src="./images/img-face-model.png" alt="" />
+                        </a>
+                      </div>
+                      <div class="e4trak"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- end model nav-two -->
+            </div>
+            <div class="lang-nav">
+              <a href="./index.html"> ENGLISH </a>
+              <span>|</span>
+              <a href="./index-arabic.html"> العربية </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- end NavBar -->
+
+    <!-- start Bg Home -->
+    <section class="Bg-Home">
+      <div class="container">
+        <div class="text-Bg-Home">
+          <h3>وجبات صحية بأسعار تنافسية</h3>
+          <p>تطبيق يوفر وجبات يومية وطازجة للمجموعات يناسب احتياجات مؤسستك</p>
+        </div>
+      </div>
+    </section>
+    <!-- end Bg Home -->
+
+    <!-- start section slider-one -->
+    <div
+      dir="ltr"
+      id="who-we-are"
+      class="owl-carousel owl-theme sec-slider-one"
+    >
+      <div class="item">
+        <section class="Slider-one">
+          <div class="container">
+            <div class="slider-all slide-arabic">
+              <div dir="rtl" class="text-slider">
+                <h4>المؤسسون</h4>
+                <h3>مروان حسن عشماوي</h3>
+                <p>
+                  <i class="fa-solid fa-circle"></i> ماجستير في التفكير الإبداعي
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> مدير التسويق الدولي في سابك
+                  ومؤسس شركة الإنترنت السعودية لشركات الابتكار التكنولوجي ،
+                  وشركة جافا الخليج ، وشركة أطلس للتكنولوجيا ، ومجموعة واحة
+                  الوسائط الإعلامية.
+                </p>
+              </div>
+              <div class="img-slider">
+                <img src="./images/img-Marwan.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="item">
+        <section class="Slider-one">
+          <div class="container">
+            <div class="slider-all slide-arabic">
+              <div dir="rtl" class="text-slider">
+                <h3>المستشار / سمير بعامر</h3>
+                <h4>رئيس عيادات الأداء للاستشارات الإدارية العليا</h4>
+                <p>
+                  <i class="fa-solid fa-circle"></i>لديه أكثر من 23 عامًا خبرة
+                  في الخدمات المصرفية في مناصب قيادية في مجالات تطوير الأعمال
+                  والتمويل للشركات الصغيرة و المؤسسات المتوسطة
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> لديه أكثر من 10 سنوات خبرة
+                  في تقديم الاستشارات المتخصصة في تحسين الأداء العام للأنشطة
+                  الاقتصادية و إدارة المخاطر
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> ساهم مباشرة في تنمية
+                  القدرات الإدارية للأعمال الريادة من خلال سلسلة من برامج إدارة
+                  المعرفة شارك فيها أكثر من 10000 شخص
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>عضو استشاري لجنة المكاتب
+                  بغرفة جدة
+                </p>
+                <h4>مجالات الخبرة:</h4>
+                <br />
+                <p>
+                  <i class="fa-solid fa-circle"></i>التشخيص والتطوير
+                  الاستراتيجيات
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>تشخيص وتحسين الأداء التأسيسي
+                  لنمو الأعمال
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>الإرشاد والتوجيه رواد
+                  الأعمال من رجال الأعمال
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>إدارة مخاطر أنشطة اقتصادية
+                </p>
+              </div>
+              <div class="img-slider">
+                <img src="./images/most4ar-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="item">
+        <section class="Slider-one">
+          <div class="container">
+            <div class="slider-all slide-arabic">
+              <div dir="rtl" class="text-slider">
+                <h3>د.محمد ال عبد الرحيم</h3>
+                <p>
+                  <i class="fa-solid fa-circle"></i> المستشار المالي - إعادة
+                  الهيكلة والتكنولوجيا المالية
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> عضو هيئة تدريس في جامعة
+                  الملك جامعة عبد العزيز في قسم التمويل الإسلامي معهد الاقتصاد
+                  الإسلامي ، أمين السر الإسلامي قسم المالية
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> ساهم مباشرة في تنمية
+                  القدرات الإدارية للأعمال الريادة من خلال سلسلة من برامج إدارة
+                  المعرفة شارك فيها أكثر من 10000 شخص
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>لديه سنوات من الخبرة في
+                  تقديم المشورة المتخصصة في إنشاء و هيكلة الشركات والشركات
+                  العائلية ، وتحسين الأداء المالي للمؤسسات ومخاطر التحوط.
+                </p>
+                <h4>مجالات الخبرة:</h4>
+                <br />
+                <p>
+                  <i class="fa-solid fa-circle"></i>مستشار معتمد و ممارس في
+                  الإدارة الإستراتيجية
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>لديه خبرة واسعة في التمويل
+                  الإسلامي وحلول التكنولوجيا المالية
+                </p>
+              </div>
+              <div class="img-slider">
+                <img src="./images/mo7amed-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="item">
+        <section class="Slider-one">
+          <div class="container">
+            <div class="slider-all slide-arabic">
+              <div dir="rtl" class="text-slider">
+                <h3>عمر عبدالعزيز بغلف</h3>
+                <p class="p-hight">
+                  <i class="fa-solid fa-circle"></i> حاصل على درجة الماجستير في
+                  الإدارة المالية.
+                </p>
+                <p class="p-hight">
+                  <i class="fa-solid fa-circle"></i> كان يعمل في المالية قسم في
+                  شركة أصول المالية.
+                </p>
+                <p class="p-hight">
+                  <i class="fa-solid fa-circle"></i> المدير المالي في مؤسسة
+                  عبدالعزيز احمد بغلف للمقاولات.
+                </p>
+              </div>
+              <div class="img-slider">
+                <img src="./images/3omr-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <div class="item">
+        <section class="Slider-one">
+          <div class="container">
+            <div class="slider-all slide-arabic">
+              <div dir="rtl" class="text-slider">
+                <h3>فهد المانع القحطاني</h3>
+                <h5>الرئيس التنفيذى</h5>
+                <p>
+                  <i class="fa-solid fa-circle"></i> مدير معتمد في إدارة
+                  المشاريع المهنية
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> عملت في الإنسان دائرة
+                  الموارد في المديرية العامة لمحمد مكتب مجموعة يوسف الناغي
+                  الرئيسي
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i>كان يعمل كمسؤول تنفيذي مدير
+                  لمجموعة شركات ومؤسسات وخاصة المدارس
+                </p>
+                <p>
+                  <i class="fa-solid fa-circle"></i> كان يعمل كمسؤول تنفيذي مدير
+                  احدى البرامج التليفزيونية لقنوات ميديا روتانا
+                </p>
+              </div>
+              <div class="img-slider">
+                <img src="./images/fahd-img.png" alt="" />
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- end section slider-one-->
+    <!-- start section slider-two -->
+    <!-- Swiper -->
+    <section class="sec-swiber-two">
+      <div class="container">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="slider-all-two">
+                  <div class="text-slider">
+                    <h3>رؤيتنا</h3>
+                    <p class="p-hight">
+                      أن نصبح المنصة الأكثر ثقة في الشرق الأوسط بين مقدمي الغذاء
+                      وبين قطاع الأعمال و القطاع غير الربحي من خلال تقديم أفضل
+                      المواد الغذائية "قائمة" تلبي احتياجات شركاء النجاح
+                    </p>
+                  </div>
+                  <div class="img-slider">
+                    <img src="./images/img-slider-two.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="slider-all-two">
+                  <div class="text-slider">
+                    <h4>رسالتنا</h4>
+                    <p class="p-hight">
+                      في قطاع الأعمال والقطاع غير الربحي بواسطة تحليل توقعات
+                      شركائنا في النجاح من خلال ربط مقدمي خدمات الطعام ، "قائمة"
+                      طعام تناسبها تطلعات العملاء وقدراتهم واحتياجاتهم الغذائية
+                      وتمكنهم من الحصول على نموذج حديث لقائمة باستخدام تقنيات
+                      مبتكرة
+                    </p>
+                  </div>
+                  <div class="img-slider">
+                    <img src="./images/img-slider-two-2-2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="slider-all-two">
+                  <div class="text-slider">
+                    <h4>قيمنا</h4>
+                    <p class="p-hight">
+                      <i class="fa-solid fa-circle"></i> الخصوصية والموثوقية
+                    </p>
+                    <p class="p-hight">
+                      <i class="fa-solid fa-circle"></i> الجودة والحفاظ على
+                      البيئة
+                    </p>
+                    <p class="p-hight">
+                      <i class="fa-solid fa-circle"></i> الوعي والتثقيف
+                    </p>
+                    <p class="p-hight">
+                      <i class="fa-solid fa-circle"></i> التطوير والابتكار
+                    </p>
+                  </div>
+                  <div class="img-slider">
+                    <img src="./images/img-slider-two-3.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="container">
+                <div class="slider-all-two">
+                  <div class="text-slider">
+                    <h4>أهدافنا</h4>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      المســـاهمة في تحقيق مبـــادرات جودة الحياة ضمن رؤية
+                      المملكة 2030
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+
+                      أن نكون الشـــريك الاســـاتيجي لشركات الأعاشة والمطاعم
+                      الفندقية
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      أن ﻧﻜﻮن اﻟﺸﺮﻳﻚ اﻟﻐﺬاﺋﻲ اﻟﻤﻮﺛﻮق ﻟﻘﻄﺎع اﻟﻌﻤﺎل
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      أن نكـــون الشـــريك الغذائي المســـتدام للقطاع الغير ربحي
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      ﺗﺤﻘﻴـــﻖ اﻟﺎﺳـــﺘﺪاﻣﺔ اﻟﻤﺘﻜﺎﻣﻠﺔ ﻣـــﻦ ﺧﻠﺎل ﻧﻤﻮذج ﻋﻤﻞ ﻣﺒﺘﻜﺮ
+                      ﻳﺮﺑﻂ أﺻﺤﺎب اﻟﻤﺼﻠﺤﺔ
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      اﻟﺘﺤﻠﻴﻞ واﻟﺘﺤﺪﻳﺚ اﻟﻤﺴـــﺘﻤﺮ ﻟﻘﺎﺋﻤﺔ اﻟﻄﻌﺎم ﺑﻨﺎء ﻋﻠﻰ
+                      اﺣﺘﻴﺎﺟﺎت اﻟﻌﻤﻠﺎء
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      أن ﻧﻘـــﺪم ﺣﻠـــﻮﻟﺎ ﺗﻘﻨﻴﺔ ﻋﺒﺮ ﺗﻄﺒﻴﻖ اﻟﻤﻨﻴﻮ
+                    </p>
+                    <p>
+                      <i class="fa-solid fa-circle"></i>
+                      اﻟﻮﻟﺎء ﻟﻌﻤﻠﺎﺋﻨﺎ واﻟﺘﻮاﺻﻞ اﻟﻔﻌﺎﻟﺒﺮﻓﻊ اﻟﻮﻋﻲ واﻟﺘﺜﻘﻴﻒ اﻟﻐﺬاﺋﻲ
+                    </p>
+                  </div>
+                  <div class="img-slider">
+                    <img src="./images/img-slider-two-4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div> -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+    <!-- end section slider-two-->
+
+    <!-- start section join us -->
+    <section class="sec-Join-Us">
+      <div class="container">
+        <div class="text-join-us">
+          <h1>Join Us</h1>
+          <div class="btn-Bg-Join-Us">
+            <button
+              data-bs-toggle="modal"
+              href="#exampleModalToggle"
+              role="button"
+              type="submit"
+            >
+              مقدم الخدمة (المستفيد)
+            </button>
+
+            <button
+              data-bs-toggle="modal"
+              href="#exampleModalToggle"
+              role="button"
+              type="submit"
+            >
+              طالب الخدمة (تقديم الطعام)
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section join us -->
+
+    <!-- start section contact us -->
+    <section id="Contact" class="sec-contact-us">
+      <div class="container">
+        <div class="contact-form-img-all">
+          <div class="form-contact-us">
+            <h4>هل لديك سؤال او شكوى؟</h4>
+            <p>املأ هذا النموذج وسيتصل بك مديرنا داخل 48 ساعة القادمة</p>
+            <form action="">
+              <div class="form-name-email">
+                <input type="text" placeholder="الاسم" />
+                <input type="email" placeholder="عنوان بريد الكتروني" />
+              </div>
+              <textarea placeholder="رسالة"></textarea>
+            </form>
+            <div class="details-contact-us">
+              <h4>أو يمكنك الاتصال بنا عبر</h4>
+              <a href="tel:+0580125943">
+                <i class="fa-solid fa-phone"></i> 0580125943 / 0581805441
+              </a>
+              <a target="_blank" href="https://wa.me/0581805441">
+                <i class="fa-brands fa-whatsapp"></i> 0581805441
+              </a>
+              <a target="_blank" href="https://www.alminu.com">
+                <i class="fa-solid fa-globe"></i> www.alminu.com
+              </a>
+            </div>
+          </div>
+          <div class="img-contact-us">
+            <img src="./images/img-contact-us.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end section contact us -->
+
+    <!-- start footer -->
+    <footer>
+      <div class="container">
+        <div class="footer-all">
+          <div class="img-footer">
+            <a href="./index-arabic.html">
+              <img src="./images/logo-Nav-Menu.png" alt="" />
+            </a>
+          </div>
+          <ul class="">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >الرئيسية</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">من نحن</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">اتصل بنا</a>
+            </li>
+          </ul>
+          <div class="icon-footer">
+            <a href="https://www.facebook.com">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+        <div class="khat-footer"></div>
+        <div class="under-footer">
+          <p>
+            حقوق التأليف والنشر <i class="fa-regular fa-copyright"></i> 2022
+          </p>
+        </div>
+      </div>
+    </footer>
+    <!-- end footer -->
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="./js/owl.carousel.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
